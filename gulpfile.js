@@ -13,6 +13,7 @@ var gulp = require('gulp'),
 
 var pathSass = ['!app/**/ignore.scss', 'app/components/**/*.+(scss|sass)'];
 var pathHtml = 'app/**/*.html';
+var pathTemplates = 'app/components/**/*.template.html';
 var pathJs = ['!app/components/**/*.spec.js', 'app/components/**/*.js', 'app/components/**/*.*.js'];
 var buildFolder = 'Deployment';
 var moduleName = 'myApp';
@@ -59,6 +60,7 @@ gulp.task('clean', function() {
 gulp.task('serve', ['browser-sync', 'sass', 'scripts'], function() {
   gulp.watch(pathSass, ['sass']);
   gulp.watch(pathJs, ['scripts']);
+  gulp.watch(pathTemplates, ['scripts']);
   gulp.watch(pathHtml, browserSync.reload);
 });
 
