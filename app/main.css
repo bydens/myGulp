@@ -1,0 +1,13 @@
+.test {
+  padding: 20px;
+  background-color: orangered;
+  font-size: 15px;
+  color: greenyellow; }
+
+.test2 {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LnNjc3MiLCJ0ZXN0Mi90ZXN0Mi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBYztFQUNkLDRCQUE0QjtFQUM1QixnQkFBZ0I7RUFDaEIsbUJBQW1CLEVBQ3BCOztBQ0xEO0VBQ0UsY0FBYztFQUNkLHFCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjLEVBQ2YiLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudGVzdCB7XHJcbiAgcGFkZGluZzogMjBweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBvcmFuZ2VyZWQ7XHJcbiAgZm9udC1zaXplOiAxNXB4O1xyXG4gIGNvbG9yOiBncmVlbnllbGxvdztcclxufSIsIi50ZXN0MiAge1xyXG4gIHBhZGRpbmc6IDMwcHg7XHJcbiAgZGlzcGxheTogZmxleDtcclxufSJdfQ== */
