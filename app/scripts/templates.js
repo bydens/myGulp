@@ -1,0 +1,1 @@
+angular.module('myApp').run(['$templateCache', function($templateCache) {$templateCache.put('test2/test2.template.html','<h1>Dierctive template</h1>\r\n<ol>\r\n  <li ng-repeat="item in data">{{item}}</li>\r\n</ol>');}]);

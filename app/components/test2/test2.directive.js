@@ -7,10 +7,12 @@
 
   var myDirect = function (pathTpl) {
     return {
+      restrict: 'E',
       scope: {
         data: '='
       },
-      templateUrl: pathTpl + 'test2/test2.template.html',
+      // templateUrl: pathTpl + 'test2/test2.template.html',
+      templateUrl: 'test2/test2.template.html',
       link: linkFn
     }
   };
