@@ -11,7 +11,7 @@ var gulp = require('gulp'),
     usemin = require('gulp-usemin');
 
 var pathSass = ['!app/**/ignore.scss', 'app/components/**/*.+(scss|sass)'];
-var pathHtml = 'app/*.html';
+var pathHtml = 'app/**/*.html';
 var pathJs = ['!app/components/**/*.spec.js', 'app/components/**/*.js', 'app/components/**/*.*.js'];
 var buildFolder = 'Deployment';
 
@@ -58,8 +58,9 @@ gulp.task('build', ['clean'], function() {
   
   var buildVendorJs = gulp.src('app/index.html')
     .pipe(usemin({
-      css: [ cssnano() ],
-      jsvendor: [ uglify() ],
+      cssVendor: [ cssnano() ],
+      cssApp: [ cssnano() ],
+      jsVendor: [ uglify() ],
       jsApp: [ uglify() ]
     }))
     .pipe(gulp.dest(buildFolder));

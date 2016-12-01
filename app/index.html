@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-<!-- build:css css/app.min.css -->
-<link rel="stylesheet" href="main.css"/>
-<!-- endbuild -->
-
+  <!-- build:cssVendor css/vendor.min.css -->
+  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+  <!-- endbuild -->
+  <!-- build:cssApp css/app.min.css -->
+  <link rel="stylesheet" href="main.css"/>
+  <!-- endbuild -->
 </head>
 <body>
   <div class="test">
@@ -15,9 +17,10 @@
 
   <div class="test2" ng-controller="mainCtrl">
     {{message}}
+    <my-direct data="arr"></my-direct>
   </div>
 
-  <!-- build:jsvendor script/vendor.min.js -->
+  <!-- build:jsVendor script/vendor.min.js -->
   <script src="libs/angular/angular.js"></script>
   <!-- endbuild -->
 
